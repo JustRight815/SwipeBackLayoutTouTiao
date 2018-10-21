@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.view.View;
 import android.widget.Button;
+
 import com.zh.swipebackdemo.activity.CommonActivity;
 import com.zh.swipebackdemo.activity.HorizontalScrollViewActivity;
 import com.zh.swipebackdemo.activity.ListViewActivity;
@@ -104,7 +105,7 @@ public class MainActivity extends BaseSwipeActivity implements View.OnClickListe
     }
 
     private void changeActionBarColor() {
-//        StatusBarUtil.setColorForSwipeBack(this, getColors()[mBgIndex], 0);
+        setStatusBarColor(getColors()[mBgIndex], 0);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColors()[mBgIndex]));
         mBgIndex++;
         if (mBgIndex >= getColors().length) {
