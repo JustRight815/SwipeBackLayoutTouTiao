@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        applicationId "com.zh.swipeback"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation "com.android.support:recyclerview-v7:25.4.0"
+    compile project(':swipebacklib')
+    // StatusBarUtil 沉浸式状态栏
+    implementation ('com.jaeger.statusbarutil:library:1.4.0'){
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+
+}

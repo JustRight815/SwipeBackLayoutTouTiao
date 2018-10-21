@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zh.swipebackdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".MainApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme5">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CommonActivity"
+            android:theme="@style/AppTheme5" >
+
+        </activity>
+        <activity
+            android:name=".activity.ScrollViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.HorizontalScrollViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.NestedScrollViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.ListViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.RecyclerViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.ViewPagerActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".activity.SwipeRefreshLayoutActivity"
+            android:theme="@style/AppTheme5" />
+    </application>
+
+</manifest>
