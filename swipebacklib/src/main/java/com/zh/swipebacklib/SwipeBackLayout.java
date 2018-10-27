@@ -344,11 +344,6 @@ public class SwipeBackLayout extends FrameLayout {
                 switch (mDirectionMode) {
                     case FROM_LEFT:
                         //滑动关闭
-                        ObjectAnimator closeAnimatorX = ObjectAnimator.ofFloat(mPreviousChild, "scaleX", mScale, 1f);
-                        ObjectAnimator closeAnimatorY = ObjectAnimator.ofFloat(mPreviousChild, "scaleY", mScale, 1f);
-                        AnimatorSet animatorSet1 = new AnimatorSet();
-                        animatorSet1.playTogether(closeAnimatorX, closeAnimatorY);
-                        animatorSet1.setDuration(ANIM_DURATION).start();
                         smoothScrollToX(width);
                         break;
                     case FROM_TOP:
@@ -368,11 +363,6 @@ public class SwipeBackLayout extends FrameLayout {
                     case FROM_LEFT:
                     case FROM_RIGHT:
                         //滑动返回
-                        ObjectAnimator closeAnimatorX = ObjectAnimator.ofFloat(mPreviousChild, "scaleX", mScale, FINALSCALE);
-                        ObjectAnimator closeAnimatorY = ObjectAnimator.ofFloat(mPreviousChild, "scaleY", mScale, FINALSCALE);
-                        AnimatorSet animatorSet1 = new AnimatorSet();
-                        animatorSet1.playTogether(closeAnimatorX, closeAnimatorY);
-                        animatorSet1.setDuration(ANIM_DURATION).start();
                         smoothScrollToX(getPaddingLeft());
                         break;
                     case FROM_BOTTOM:
