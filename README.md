@@ -8,7 +8,8 @@
   5.支持viewpager、listview、webview等，处理了滑动冲突  
   6.解决了华为手机虚拟键遮挡布局问题  
   
-  下载体验： [SwipeBack.apk](https://github.com/JustRight815/SwipeBackLayoutTouTiao/blob/master/apk/SwipeBackTouTiao.apk) 
+  欢迎下载体验，指出问题： [SwipeBack.apk](https://github.com/JustRight815/SwipeBackLayoutTouTiao/blob/master/apk/SwipeBackTouTiao.apk) 
+  
   
    效果预览：    
     ![SwipeBack](https://github.com/JustRight815/SwipeBackLayoutTouTiao/blob/master/screenshot/screenshot.gif) 
